@@ -1,0 +1,26 @@
+name: usercode
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  expressions: ^0.2.5
+
+  # Additional dependencies for better UI and formatting
+  intl: ^0.18.0  # For number formatting
+  google_fonts: ^6.1.0  # For custom fonts
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true

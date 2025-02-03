@@ -12,8 +12,8 @@ file:///nix/store/v3pwqhl88vsk7wrmr9whbsi9jhqnqfm5-flutter-wrapped-3.19.0-sdk-li
 file:///nix/store/v3pwqhl88vsk7wrmr9whbsi9jhqnqfm5-flutter-wrapped-3.19.0-sdk-links/packages/flutter_test/lib/
 usercode
 3.3
-file:///usercode/
-file:///usercode/lib/
+file:///usercode/flutter-calculator/
+file:///usercode/flutter-calculator/lib/
 async
 2.18
 file:///userdata/dart/pub-cache/hosted/pub.dev/async-2.11.0/

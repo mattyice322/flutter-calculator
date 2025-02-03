@@ -41,6 +41,11 @@ class _CalculatorState extends State<Calculator> {
         }
       } else if (input == '=') {
         _result = _evaluateExpression(_expression);
+      } else if (input == 'x²') {
+        if (_expression.isNotEmpty && double.tryParse(_expression) != null) {
+          double number = double.parse(_expression);
+          _result = (number * number).toStringAsFixed(2);
+        }
       } else {
         if (_isOperator(input) && _expression.isNotEmpty && _isOperator(_expression[_expression.length - 1])) {
           return;
@@ -174,11 +179,12 @@ class _CalculatorState extends State<Calculator> {
     '4', '5', '6', '*',
     '1', '2', '3', '-',
     'C', '0', '=', '+',
-    '.', '⌫', '%'
+    '.', '⌫', '%', 'x²'
   ];
 
   bool _isOperator(String button) {
-    return ['/', '*', '-', '+', '=', '%'].contains(button);
+    return ['/', '*', '-', '+', '=', '%', 'x²'].contains(button);
   }
 }
+
 
